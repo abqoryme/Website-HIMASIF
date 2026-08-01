@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1E293B;
+    background-color: #F8FAFC;
+}
+
+@layer components {
+    .container-himasif {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5;
+    }
+
+    .btn-outline {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-glass transition-all duration-300 hover:bg-white/15 hover:-translate-y-0.5;
+    }
+
+    .btn-outline-dark {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-white px-6 py-3 text-sm font-semibold text-body transition-all duration-300 hover:border-primary hover:text-primary hover:-translate-y-0.5;
+    }
+
+    .section-eyebrow {
+        @apply text-xs font-bold uppercase tracking-[0.2em] text-primary;
+    }
+
+    .card-base {
+        @apply rounded-2xl border border-border bg-white p-6 shadow-soft transition-all duration-300;
+    }
+
+    .card-hover {
+        @apply hover:-translate-y-1.5 hover:shadow-soft-lg;
+    }
+
+    .glass-card {
+        @apply rounded-2xl border border-white/25 bg-white/10 p-5 backdrop-blur-glass shadow-soft-lg;
+    }
+
+    .nav-link {
+        @apply relative text-sm font-medium text-body/80 transition-colors duration-200 hover:text-primary;
+    }
+
+    .nav-link.is-active {
+        @apply text-primary;
+    }
+
+    .nav-link.is-active::after {
+        content: '';
+        @apply absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-primary;
+    }
+
+    .badge-pill {
+        @apply inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur-glass;
+    }
+
+    .social-icon {
+        @apply flex h-9 w-9 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition-all duration-300 hover:bg-primary hover:border-primary;
+    }
+
+    .footer-link {
+        @apply text-sm text-white/70 transition-colors duration-200 hover:text-white;
+    }
+}
+
+.gradient-hero {
+    background: linear-gradient(120deg, #0F172A 0%, #142449 45%, #1D4ED8 130%);
+}
+
+.gradient-radial-accent {
+    background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.35), transparent 55%);
+}
