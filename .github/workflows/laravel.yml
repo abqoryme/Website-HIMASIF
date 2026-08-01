@@ -20,6 +20,18 @@ jobs:
           php-version: "8.3"
           extensions: mbstring, pdo_sqlite, sqlite3, fileinfo, intl, zip, bcmath
           coverage: none
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install NPM Dependencies
+        run: npm install
+
+      - name: Build Frontend Assets
+        run: npm run build
 
       - name: Validate composer.json
         run: composer validate
