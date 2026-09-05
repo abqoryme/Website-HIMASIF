@@ -65,7 +65,7 @@ postcss.config.js
 package.json
 package-lock.json
 
-«Struktur dapat berkembang sesuai kebutuhan project. Jika menambahkan component baru, usahakan tetap mengikuti struktur yang sudah ada agar project mudah dipelihara.»
+«Catatan: Struktur dapat berkembang sesuai kebutuhan project. Jika menambahkan component baru, usahakan tetap mengikuti struktur yang sudah ada agar project mudah dipelihara.»
 
 ---
 
@@ -148,7 +148,7 @@ Kemudian generate application key:
 
 php artisan key:generate
 
-«Untuk frontend development, konfigurasi database mungkin belum diperlukan selama fitur yang digunakan tidak membutuhkan backend/database.»
+«Catatan: Untuk frontend development, konfigurasi database mungkin belum diperlukan selama fitur yang digunakan tidak membutuhkan backend/database.»
 
 Jangan commit file ".env" ke repository.
 
@@ -192,7 +192,7 @@ Jika dependency PHP berubah:
 
 composer install
 
-Jika ada perubahan pada package frontend:
+Jika terdapat perubahan pada package frontend:
 
 npm install
 
@@ -255,10 +255,11 @@ Component digunakan untuk bagian UI yang reusable.
 
 Contoh:
 
-resources/views/components/hero.blade.php
-resources/views/components/about.blade.php
-resources/views/components/program.blade.php
-resources/views/components/news.blade.php
+resources/views/components/
+├── hero.blade.php
+├── about.blade.php
+├── program.blade.php
+└── news.blade.php
 
 Component harus sebisa mungkin tidak bergantung pada database atau backend.
 
@@ -308,7 +309,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-«Routing di atas hanya untuk kebutuhan frontend sementara. Ketika backend mulai dikerjakan, route dapat dipindahkan atau diubah agar menggunakan Controller.»
+«Catatan: Routing di atas hanya untuk kebutuhan frontend sementara. Ketika backend mulai dikerjakan, route dapat dipindahkan atau diubah agar menggunakan Controller.»
 
 ---
 
@@ -538,12 +539,12 @@ Gunakan branch sesuai jenis pekerjaan.
 Contoh:
 
 main
-├── develop
-├── feature/navbar
-├── feature/homepage
-├── feature/news
-├── feature/gallery
-└── fix/responsive-navbar
+└── develop
+    ├── feature/navbar
+    ├── feature/homepage
+    ├── feature/news
+    ├── feature/gallery
+    └── fix/responsive-navbar
 
 Membuat Branch
 
@@ -564,14 +565,15 @@ Contoh:
 git add .
 git commit -m "feat: add homepage hero section"
 
-Contoh prefix:
+Prefix yang digunakan:
 
-feat:    fitur baru
-fix:     memperbaiki bug
-style:   perubahan tampilan
-refactor: perubahan struktur kode
-docs:    dokumentasi
-chore:   konfigurasi/dependency
+Prefix| Penggunaan
+"feat"| Fitur baru
+"fix"| Memperbaiki bug
+"style"| Perubahan tampilan
+"refactor"| Perubahan struktur kode
+"docs"| Dokumentasi
+"chore"| Konfigurasi/dependency
 
 Contoh:
 
@@ -620,7 +622,7 @@ Hindari langsung mengerjakan perubahan pada branch "main".
 
 🚨 Troubleshooting
 
-"npm" tidak ditemukan
+""npm" tidak ditemukan"
 
 Pastikan Node.js dan npm sudah terinstall:
 
@@ -633,7 +635,7 @@ Jika command tidak ditemukan, install Node.js terlebih dahulu.
 
 Dependency tidak ditemukan
 
-Coba hapus dependency kemudian install ulang.
+Hapus "node_modules", kemudian install ulang.
 
 Linux/macOS:
 
@@ -649,21 +651,24 @@ npm install
 
 Vite tidak berjalan
 
-Pastikan:
+Pastikan dependency sudah terinstall:
 
 npm install
 
-kemudian:
+Kemudian:
 
 npm run dev
 
-Jika masih bermasalah, periksa "package.json" dan "vite.config.js".
+Jika masih bermasalah, periksa:
+
+package.json
+vite.config.js
 
 ---
 
 Manifest Vite tidak ditemukan
 
-Jika muncul error seperti:
+Jika muncul error:
 
 Vite manifest not found
 
@@ -675,7 +680,7 @@ Pastikan file berikut tersedia:
 
 public/build/manifest.json
 
-Untuk development, pastikan Vite berjalan:
+Untuk development, pastikan Vite juga berjalan:
 
 npm run dev
 
@@ -819,7 +824,7 @@ Sudah tersedia
 
 Belum tersedia / akan dikerjakan
 
-- [ ] UI/UX
+- [ ] UI/UX final
 - [ ] Authentication
 - [ ] Database
 - [ ] Dynamic news
@@ -841,4 +846,6 @@ Website ini dikembangkan untuk mendukung kebutuhan digital Himpunan Sistem Infor
 
 ---
 
-📄 License: [MIT](](https://github.com/abqoryme/License/blob/main/LICENSE)
+📄 License
+
+"MIT License" (https://github.com/abqoryme/License/blob/main/LICENSE)
