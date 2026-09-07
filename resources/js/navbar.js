@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('site-navbar');
     const toggleBtn = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -6,11 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleScroll = () => {
         if (window.scrollY > 12) {
-            navbar.classList.add('shadow-soft', 'bg-dark/95', 'backdrop-blur-glass');
-            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('shadow-soft', 'backdrop-blur-glass');
         } else {
-            navbar.classList.remove('shadow-soft', 'bg-dark/95', 'backdrop-blur-glass');
-            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('shadow-soft', 'backdrop-blur-glass');
         }
     };
 
@@ -23,6 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.toggle('max-h-0');
             toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
             toggleBtn.classList.toggle('is-active');
+            toggleBtn.setAttribute('aria-label', isOpen ? 'Tutup menu' : 'Buka menu');
+
+            const icon = toggleBtn.querySelector('[data-lucide]');
+            if (icon) {
+                icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            }
         });
     }
 

@@ -28,7 +28,7 @@
         <div class="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div class="flex flex-col gap-3">
                 <span class="section-eyebrow">Program Kami</span>
-                <h2 class="text-3xl font-extrabold text-dark sm:text-4xl">Program Kerja Unggulan</h2>
+                <h2 class="text-3xl font-extrabold text-dark sm:text-4xl">Program Kerja HIMASIF</h2>
             </div>
             <a href="{{ url('/program') }}" class="nav-link flex items-center gap-1 text-primary">
                 Lihat Semua Program

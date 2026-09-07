@@ -1,4 +1,4 @@
-<section class="gradient-hero gradient-radial-accent relative overflow-hidden">
+<section class="home-hero relative overflow-hidden">
     <div class="container-himasif relative grid grid-cols-1 items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
         <div class="flex flex-col items-start gap-6">
             <span class="badge-pill">

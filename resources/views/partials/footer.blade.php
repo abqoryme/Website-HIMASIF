@@ -23,10 +23,10 @@
             <h4 class="text-sm font-semibold uppercase tracking-wide text-white">Navigasi</h4>
             <a href="{{ url('/') }}" class="footer-link">Beranda</a>
             <a href="{{ url('/about') }}" class="footer-link">Tentang Kami</a>
+            <a href="{{ url('/struktur') }}" class="footer-link">Struktur Kepengurusan</a>
             <a href="{{ url('/program') }}" class="footer-link">Program</a>
             <a href="{{ url('/news') }}" class="footer-link">Berita</a>
             <a href="{{ url('/gallery') }}" class="footer-link">Galeri</a>
-            <a href="{{ url('/document') }}" class="footer-link">Dokumen</a>
             <a href="{{ url('/contact') }}" class="footer-link">Kontak</a>
         </div>
 
@@ -36,15 +36,6 @@
             <a href="{{ url('/program') }}" class="footer-link">HIMASIF CodeLab</a>
             <a href="{{ url('/program') }}" class="footer-link">HIMASIF Care</a>
             <a href="{{ url('/program') }}" class="footer-link">HIMASIF Event</a>
-        </div>
-
-        <div class="flex flex-col gap-3">
-            <h4 class="text-sm font-semibold uppercase tracking-wide text-white">Dokumen</h4>
-            <a href="{{ url('/document') }}" class="footer-link">AD/ART</a>
-            <a href="{{ url('/document') }}" class="footer-link">GBHO</a>
-            <a href="{{ url('/document') }}" class="footer-link">Panduan Organisasi</a>
-            <a href="{{ url('/document') }}" class="footer-link">LPJ Kegiatan</a>
-            <a href="{{ url('/document') }}" class="footer-link">Proposal Kegiatan</a>
         </div>
 
         <div class="flex flex-col gap-3">
