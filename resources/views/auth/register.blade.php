@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login HIMASIF</title>
+    <title> Register HIMASIF</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -62,8 +62,8 @@
                 </div>
 
                 <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold text-white">Sign in</h3>
-                    <p class="text-xs text-blue-200/70 mt-1">Silakan masuk untuk melanjutkan ke HIMASIF.
+                    <h3 class="text-xl font-bold text-white">Sign up</h3>
+                    <p class="text-xs text-blue-200/70 mt-1">Silakan daftar akun untuk melanjutkan ke HIMASIF.
 
                     </p>
                 </div>
@@ -118,6 +118,7 @@
                     </div>
 
                     <!-- Ingat Saya & Lupa Password -->
+                    <!--
                     <div class="flex items-center justify-between text-xs pt-1">
                         <label class="flex items-center gap-2 cursor-pointer">
                             <input type="checkbox" id="remember" name="remember"
@@ -128,7 +129,7 @@
                             <a href="{{ route('password.request') }}"
                                 class="text-blue-300 hover:text-white transition">Lupa password?</a>
                         @endif
-                    </div>
+                    </div> -->
 
                     <!-- Tombol Masuk Admin -->
                     <button type="submit"
@@ -160,14 +161,14 @@
                         Lanjut sebagai Guest
                     </a>
 
-                    <!-- Register -->
-                    <a href="{{ route('register') }}"
+                    <!-- Login -->
+                    <a href="{{ route('login') }}"
                         class="w-full flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400/40 text-blue-100 font-medium py-2.5 rounded-xl transition duration-200 text-xs">
                         <svg class="w-4 h-4 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
-                        Daftar akun baru
+                        Login akun
                     </a>
 
                     <!-- Kembali ke Website -->

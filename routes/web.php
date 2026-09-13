@@ -11,6 +11,9 @@ Route::get('/gallery', fn () => view('gallery'));
 Route::get('/document', fn () => view('document'));
 Route::get('/contact', fn () => view('contact'))->name('contact');
 
-// user login 
-Route::get('/login', fn () => view('auth.login'))->name('login');   
+
+// user login & register
+Route::get('/login', fn () => view('auth.login'))->name('login');
+Route::get('/register', fn () => view('auth.register'))->name('register');
+
 ?>
