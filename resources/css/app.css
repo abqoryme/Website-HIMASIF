@@ -30,9 +30,9 @@ body {
 
 @layer components {
     .container-himasif {
-        @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
     }
-
+    
     .btn-primary {
         @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5;
     }
