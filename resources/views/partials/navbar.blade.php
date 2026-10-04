@@ -40,23 +40,15 @@
                     class="invisible absolute left-0 top-full w-64 translate-y-2 rounded-xl border border-border bg-white p-2 opacity-0 shadow-soft-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                     {{-- TODO: ganti href placeholder ini setelah halaman/data Struktur Kepengurusan tersedia (fase CRUD admin) --}}
                     <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        1</a>
+                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">BPH</a>
                     <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        2</a>
+                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Akaristek</a>
                     <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        3</a>
+                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Pemikat</a>
                     <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        4</a>
+                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Media dan Kreatif</a>
                     <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        5</a>
-                    <a href="#"
-                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Struktur
-                        6</a>
+                        class="block rounded-lg px-4 py-2.5 text-sm text-body hover:bg-surface hover:text-primary">Pengembangan Karakter</a>
                 </div>
             </div>
 
@@ -113,12 +105,11 @@
                 <i data-lucide="chevron-down" class="h-4 w-4"></i>
             </button>
             <div class="hidden flex-col gap-1 pl-6">
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 1</a>
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 2</a>
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 3</a>
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 4</a>
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 5</a>
-                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Struktur 6</a>
+                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">BPH</a>
+                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Akaristek</a>
+                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Pemikat</a>
+                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Media dan Kreatif</a>
+                <a href="#" class="rounded-lg px-3 py-2.5 text-sm text-white/70 hover:bg-white/5">Pengembangan Karakter</a>
             </div>
 
             <a href="{{ url('/program') }}"

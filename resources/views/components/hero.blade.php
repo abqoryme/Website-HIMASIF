@@ -6,13 +6,13 @@
                 Himpunan Sistem Informasi
             </span>
 
-            <h1 class="text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 class="text-4xl font-extrabold leading-tight bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent sm:text-5xl lg:text-6xl">
                 HIMASIF
                 <span class="block bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Kolaborasi, Inovasi,</span>
-                <span class="block">Solusi.</span>
+                <span class="block bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Solusi.</span>
             </h1>
 
-            <p class="max-w-lg text-base leading-relaxed text-white/70 sm:text-lg">
+            <p class="max-w-lg text-base leading-relaxed text-black/70 sm:text-lg">
                 Wadah pengembangan potensi mahasiswa Sistem Informasi melalui kolaborasi, inovasi, dan aksi nyata untuk masa depan digital.
             </p>
 

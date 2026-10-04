@@ -34,23 +34,11 @@
         ['title' => 'Hi-Cussion', 'division' => 'mediatek', 'date' => 'April 2026', 'status' => 'Segera Datang'],
     ];
 
-    $nonEventPrograms = [
-        ['title' => 'Pengucapan Ultah Anggota HIMASIF', 'division' => 'kader', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'Love Letter', 'division' => 'kader', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'Controlling', 'division' => 'litbang', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'Penelitian', 'division' => 'litbang', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'Pengelolaan Konten Web & Sosmed', 'division' => 'humas', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'HIMASIF Wisuda', 'division' => 'humas', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'HIMASIF Mengajar', 'division' => 'humas', 'date' => 'September 2026', 'status' => 'Segera Datang'],
-        ['title' => 'Video Profil', 'division' => 'mediatek', 'date' => 'Maret 2026', 'status' => 'Selesai'],
-        ['title' => 'Maintenance Web', 'division' => 'mediatek', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-        ['title' => 'Penyedia Media', 'division' => 'mediatek', 'date' => 'Jan - Des 2026', 'status' => 'Sedang Berjalan'],
-    ];
 @endphp
 
 <section class="gradient-hero relative overflow-hidden py-16">
     <div class="container-himasif relative flex flex-col items-start gap-3">
-        <span class="badge-pill">Program Kami</span>
+        <span class="badge-pill white-badge">Program Kami</span>
         <h1 class="text-3xl font-extrabold text-white sm:text-4xl">Program Kerja HIMASIF</h1>
         <p class="max-w-xl text-sm text-white/70 sm:text-base">Berbagai program kerja yang diselenggarakan oleh setiap divisi HIMASIF untuk mengembangkan potensi mahasiswa Sistem Informasi.</p>
     </div>
@@ -93,24 +81,7 @@
             @endforeach
         </div>
 
-        {{-- Non-Event --}}
-        <div class="mb-6 flex flex-col gap-2">
-            <h2 class="text-2xl font-bold text-dark">Non-Event</h2>
-            <p class="max-w-2xl text-sm text-body/70">Program Non-event diselenggarakan oleh masing-masing divisi sebagai program kerja internal untuk pengembangan organisasi HIMASIF.</p>
-        </div>
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            @foreach ($nonEventPrograms as $program)
-                <article data-division="{{ $program['division'] }}" class="card-base flex flex-col gap-1 !p-5">
-                    <div class="flex items-start justify-between gap-3">
-                        <h3 class="text-base font-semibold text-dark">{{ $program['title'] }}</h3>
-                        <span class="shrink-0 rounded-full px-3 py-1 text-[11px] font-semibold {{ $statusStyles[$program['status']] }}">
-                            {{ $program['status'] }}
-                        </span>
-                    </div>
-                    <p class="text-xs font-medium uppercase tracking-wide text-primary">oleh {{ $divisions[$program['division']] }}</p>
-                    <p class="text-sm text-body/60">{{ $program['date'] }}</p>
-                </article>
-            @endforeach
+       
         </div>
     </div>
 </section>

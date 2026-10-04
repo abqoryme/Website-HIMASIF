@@ -141,37 +141,8 @@
                     </button>
                 </form>
 
-                <!-- Divider -->
-                <div class="flex items-center gap-4 my-5">
-                    <div class="flex-1 h-px bg-white/10"></div>
-                    <span class="text-[10px] tracking-widest text-blue-300/50 uppercase">atau</span>
-                    <div class="flex-1 h-px bg-white/10"></div>
-                </div>
-
-                <!-- Tombol Guest & Kembali ke Website -->
-                <div class="space-y-3">
-                    <!-- Tombol Guest (Opsional, arahkan ke route beranda/tamu jika ada) -->
-                    <a href="{{ route('home') }}"
-                        class="w-full flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400/40 text-blue-100 font-medium py-2.5 rounded-xl transition duration-200 text-xs">
-                        <svg class="w-4 h-4 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        Lanjut sebagai Guest
-                    </a>
-
-                    <!-- Register -->
-                    <a href="{{ route('register') }}"
-                        class="w-full flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-blue-400/40 text-blue-100 font-medium py-2.5 rounded-xl transition duration-200 text-xs">
-                        <svg class="w-4 h-4 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        Daftar akun baru
-                    </a>
-
                     <!-- Kembali ke Website -->
-                    <div class="text-center pt-2">
+                    <div class="text-center pt-1">
                         <a href="{{ route('home') }}"
                             class="text-xs text-blue-300/70 hover:text-white transition flex items-center justify-center gap-1.5">
                             <span>&larr;</span> Kembali ke Website

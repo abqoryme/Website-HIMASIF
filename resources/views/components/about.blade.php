@@ -6,10 +6,7 @@
             <p class="text-base leading-relaxed text-body/80">
                 HIMASIF adalah organisasi mahasiswa Sistem Informasi yang bertujuan menjadi wadah aspirasi, pengembangan diri, serta kolaborasi untuk menciptakan inovasi dan solusi yang bermanfaat.
             </p>
-            <a href="{{ url('/about') }}" class="btn-primary w-fit">
-                Selengkapnya Tentang Kami
-                <i data-lucide="arrow-right" class="h-4 w-4"></i>
-            </a>
+           
         </div>
 
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">

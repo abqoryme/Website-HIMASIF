@@ -5,7 +5,7 @@
 @section('content')
     <section class="gradient-hero relative overflow-hidden py-16">
         <div class="container-himasif relative flex flex-col items-start gap-3">
-            <span class="badge-pill">Galeri</span>
+            <span class="badge-pill white-badge">Galeri</span>
             <h1 class="text-3xl font-extrabold text-white sm:text-4xl">Dokumentasi Kegiatan HIMASIF</h1>
             <p class="max-w-xl text-sm text-white/70 sm:text-base">Kumpulan momen dan dokumentasi dari berbagai kegiatan HIMASIF.</p>
         </div>

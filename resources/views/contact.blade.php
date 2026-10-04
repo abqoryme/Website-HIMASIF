@@ -5,7 +5,7 @@
 @section('content')
     <section class="gradient-hero relative overflow-hidden py-16">
         <div class="container-himasif relative flex flex-col items-start gap-3">
-            <span class="badge-pill">Kontak</span>
+            <span class="badge-pill white-badge">Kontak</span>
             <h1 class="text-3xl font-extrabold text-white sm:text-4xl">Hubungi Kami</h1>
             <p class="max-w-xl text-sm text-white/70 sm:text-base">Ada pertanyaan atau ingin berkolaborasi? Sampaikan pesan Anda kepada kami.</p>
         </div>
