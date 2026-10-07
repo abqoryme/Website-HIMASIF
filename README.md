@@ -125,11 +125,12 @@ package-lock.json
 
 Sebelum menjalankan project, pastikan perangkat sudah memiliki:
 
-- PHP sesuai requirement versi Laravel yang digunakan
-- Composer
-- Node.js
-- npm
-- Git
+- [PHP](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/en)
+- [Git](https://git-scm.com/install/windows)
+
+*Silahkan download dan install terlebih dahulu apabila perangkat belum memilikinya.
 
 Cek instalasi:
 
@@ -837,22 +838,6 @@ Frontend component tetap dipertahankan reusable agar integrasi dapat dilakukan t
 - [x] Vite configuration
 - [x] Tailwind CSS
 - [x] Vanilla JavaScript
-
-### ⏳ Belum tersedia / akan dikerjakan
-
-- [ ] UI/UX
-- [ ] Authentication
-- [ ] Database
-- [ ] Dynamic news
-- [ ] Dynamic programs
-- [ ] Dynamic gallery
-- [ ] Document management
-- [ ] Contact form processing
-- [ ] Admin dashboard
-- [ ] CRUD
-- [ ] API/backend integration
-
----
 
 ## 📞 HIMASIF
 
