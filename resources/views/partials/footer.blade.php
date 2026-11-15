@@ -1,63 +1,43 @@
-<footer class="bg-dark text-white">
-    <div class="container-himasif grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-5">
-        <div class="flex flex-col gap-4 lg:col-span-1">
-            <a href="{{ url('/') }}" class="flex items-center gap-3">
-                <img src="https://placehold.co/48x48/2563EB/FFFFFF?text=HS" alt="Logo HIMASIF" class="h-11 w-11 rounded-xl">
-                <span class="flex flex-col leading-none">
-                    <span class="text-lg font-extrabold tracking-wide">HIMASIF</span>
-                    <span class="text-[10px] uppercase tracking-[0.18em] text-white/50">Himpunan Sistem Informasi</span>
-                </span>
-            </a>
-            <p class="text-sm leading-relaxed text-white/70">
-                HIMASIF adalah wadah mahasiswa Sistem Informasi untuk berkolaborasi, berinovasi, dan memberikan dampak positif bagi mahasiswa dan masyarakat.
-            </p>
-            <div class="flex items-center gap-3">
-                <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram" class="h-4 w-4"></i></a>
-                <a href="#" class="social-icon" aria-label="Youtube"><i data-lucide="youtube" class="h-4 w-4"></i></a>
-                <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin" class="h-4 w-4"></i></a>
-                <a href="#" class="social-icon" aria-label="Medium"><i data-lucide="pen-line" class="h-4 w-4"></i></a>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-main-row">
+            <div class="footer-brand-col">
+                <div class="brand-content">
+                    <div class="logo-address-group">
+                        <img src="{{ img_asset('hero_logo/himasif-header.svg') }}" alt="Logo HIMASIF" class="footer-logo">
+                        <p class="footer-address">{{ config('site.address') }}</p>
+                    </div>
+
+                    <div class="footer-social-wrapper">
+                        <a href="{{ config('site.social.instagram') }}" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram HIMASIF">
+                            <x-icon.instagram />
+                        </a>
+                        <a href="{{ config('site.social.tiktok') }}" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="TikTok HIMASIF">
+                            <x-icon.tiktok />
+                        </a>
+                        <a href="{{ config('site.social.email') }}" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Email HIMASIF">
+                            <x-icon.mail />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-grid-col">
+                <div class="footer-links-grid">
+                    @foreach (config('site.footer_links') as $group)
+                        <div class="link-group {{ $group['class'] }}">
+                            <div>
+                                <h3 class="group-title">{{ $group['title'] }}</h3>
+                                <ul class="group-list">
+                                    @foreach ($group['links'] as $link)
+                                        <li><a href="{{ isset($link['route']) ? route($link['route']) : $link['url'] }}">{{ $link['label'] }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
-
-        <div class="flex flex-col gap-3">
-            <h4 class="text-sm font-semibold uppercase tracking-wide text-white">Navigasi</h4>
-            <a href="{{ url('/') }}" class="footer-link">Beranda</a>
-            <a href="{{ url('/about') }}" class="footer-link">Tentang Kami</a>
-            <a href="{{ url('/struktur') }}" class="footer-link">Struktur Kepengurusan</a>
-            <a href="{{ url('/program') }}" class="footer-link">Program</a>
-            <a href="{{ url('/news') }}" class="footer-link">Berita</a>
-            <a href="{{ url('/gallery') }}" class="footer-link">Galeri</a>
-            <a href="{{ url('/contact') }}" class="footer-link">Kontak</a>
-        </div>
-
-        <div class="flex flex-col gap-3">
-            <h4 class="text-sm font-semibold uppercase tracking-wide text-white">Program</h4>
-            <a href="{{ url('/program') }}" class="footer-link">HIMASIF Insight</a>
-            <a href="{{ url('/program') }}" class="footer-link">HIMASIF CodeLab</a>
-            <a href="{{ url('/program') }}" class="footer-link">HIMASIF Care</a>
-            <a href="{{ url('/program') }}" class="footer-link">HIMASIF Event</a>
-        </div>
-
-        <div class="flex flex-col gap-3">
-            <h4 class="text-sm font-semibold uppercase tracking-wide text-white">Kontak Kami</h4>
-            <div class="flex items-start gap-3 text-sm text-white/70">
-                <i data-lucide="map-pin" class="mt-0.5 h-4 w-4 shrink-0 text-primary"></i>
-                <span>Fakultas Ilmu Komputer, Universitas XXX, Jl. Raya Kampus No.123, Kota</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm text-white/70">
-                <i data-lucide="mail" class="h-4 w-4 shrink-0 text-primary"></i>
-                <span>himasif@xxx.ac.id</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm text-white/70">
-                <i data-lucide="phone" class="h-4 w-4 shrink-0 text-primary"></i>
-                <span>0812-3456-7890</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="border-t border-white/10 py-6">
-        <p class="container-himasif text-center text-xs text-white/50">
-            &copy; {{ date('Y') }} HIMASIF - Himpunan Sistem Informasi. All rights reserved.
-        </p>
     </div>
 </footer>

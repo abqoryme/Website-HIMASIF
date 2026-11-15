@@ -1,10 +1,7 @@
-@extends('layouts.app')
-
-@section('title', 'HIMASIF - Beranda')
-
-@section('content')
-    @include('components.hero')
-    @include('components.about')
-    @include('components.program')
-    @include('components.news')
-@endsection
+<x-layouts.app>
+    @include('home.hero')
+    @include('home.about')
+    @include('home.kenali')
+    @include('home.events')
+    @include('home.video-modal')
+</x-layouts.app>

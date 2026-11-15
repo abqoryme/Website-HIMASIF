@@ -1,22 +1,22 @@
 <?php
 
+use App\Http\Controllers\StrukturController;
 use Illuminate\Support\Facades\Route;
 
-// public page 
-Route::get('/', fn () => view('home'))->name('home');
-Route::get('/about', fn () => view('about'))->name('about');
-Route::get('/program', fn () => view('program'));
-Route::get('/news', fn () => view('news'));
-Route::get('/gallery', fn () => view('gallery'));
-Route::get('/document', fn () => view('document'));
-Route::get('/contact', fn () => view('contact'))->name('contact');
+Route::view('/', 'home')->name('home');
 
+// Halaman yang sudah dimigrasikan (punya route/controller sendiri).
+Route::get(config('site.pages.struktur.uri'), [StrukturController::class, 'index'])->name('pages.struktur');
 
-// user login & register
-Route::get('/login', fn () => view('auth.login'))->name('login');
-Route::get('/register', fn () => view('auth.register'))->name('register');
+// Halaman lain sementara memakai placeholder "segera hadir" sampai dimigrasikan.
+// Saat sebuah halaman siap, tambahkan route-nya di atas lalu masukkan kuncinya ke $migrated.
+$migrated = ['struktur'];
 
-// admin page
-Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
+foreach (config('site.pages') as $name => $page) {
+    if (in_array($name, $migrated, true)) {
+        continue;
+    }
 
-?>
+    Route::view($page['uri'], 'pages.coming-soon', ['pageTitle' => $page['title']])
+        ->name("pages.{$name}");
+}

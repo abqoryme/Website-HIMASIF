@@ -1,0 +1,1208 @@
+@media only screen and (max-width: 7000px) {
+.page-wrapper {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+.header-upper {
+        height: 75px !important;
+    }
+
+.main-header .nav-outer .main-menu {
+		display: none !important;
+	}
+
+.main-header .nav-outer .logo-outer img {
+        width: 180px !important;
+        height: auto !important;
+    }
+
+.main-header .nav-outer .logo-outer {
+
+        margin-top: 0 !important;
+		left: 30px !important;
+    }
+
+.nav-outer .mobile-nav-toggler {
+        font-size: 28px !important;
+        padding: 0 !important;
+        top: 68% !important;
+        transform: translateY(-50%) !important;
+        right: 40px !important;
+    }
+
+.main-header .nav-outer .main-menu {
+		display: none !important;
+	}
+
+.nav-outer .mobile-nav-toggler {
+		display: block;
+		margin: 0;
+		padding: 24px 0;
+	}
+
+.main-header .header-upper .nav-outer:before {
+		display:none;
+	}
+
+.main-header .dropdown > a > i {
+		display: none;
+	}
+
+.main-header .nav-outer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-left: 20px;
+		margin-right: 10px;
+		width:auto;
+		float:none;
+	}
+
+.main-header .nav-outer .logo-outer {
+		position:relative;
+		left:0;
+		top: 8px;
+
+		width:auto;
+		height:auto;
+		margin:0;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+.nav-outer .mobile-nav-toggler {
+		position: absolute;
+		right: 10px;
+
+		transform: translateY(-58%);
+		line-height: 50px;
+		display: block;
+		margin: 0;
+		padding: 24px 0;
+	}
+
+.tentang-kami {
+        display: flex; justify-content: start;
+    }
+
+.logo-address-group {
+		gap: 20px;
+        margin-bottom: 10px;
+	}
+
+input[type="checkbox"] {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.header-upper {
+        height: 65px !important;
+    }
+
+.main-header .nav-outer .logo-outer img {
+        width: 130px !important;
+        height: auto !important;
+    }
+
+.main-header .nav-outer .logo-outer {
+
+        margin-top: 3px !important;
+		left: 0px !important;
+    }
+
+.nav-outer .mobile-nav-toggler {
+        font-size: 24px !important;
+        padding: 0 !important;
+        top: 75% !important;
+        transform: translateY(-50%) !important;
+        right: 10px !important;
+    }
+
+.about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+.back-to-top {
+        bottom: 40px;
+        right: 30px;
+    }
+
+.button-back-to-top {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+
+.button-back-to-top .svg-back-to-top {
+        width: 18px;
+        height: 18px;
+    }
+
+.button-back-to-top::after {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.main-menu {
+		width:90%;
+	}
+
+.main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+.back-to-top {
+        bottom: 30px;
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+.margin-x-section {
+
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+.hero-section .hero-content .hero-title {
+        font-size: 36px;
+    }
+
+.hero-section .hero-desc-wrapper .hero-desc {
+        font-size: 12px;
+    }
+
+.hero-section .hero-cta-wrapper {
+        margin-top: 12px;
+    }
+
+.hero-section .hero-image-container .overlay-top {
+        padding-top: 8px;
+    }
+
+.hero-section .hero-image-container .overlay-bottom {
+        padding-bottom: 8px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur {
+        padding: 4px 8px;
+        gap: 4px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur img {
+        width: 16px;
+        height: 16px;
+    }
+
+.overlay-bottom .image-description-container .image-description-subtitle {
+        font-size: 8px;
+    }
+
+.hero-section .nilai-kabinet-container .nilai-kabinet-mobile {
+        width: 70%;
+    }
+
+.nilai-kabinet-desktop .nilai-title-pc, .nilai-kabinet-mobile .nilai-title-mobile {
+        font-size: 14px;
+    }
+
+.overlay-bottom .image-description-container .image-description-title .image-title {
+        font-size: 12px;
+    }
+
+.about-title-container h2 {
+        font-size: 18px;
+    }
+
+.about-title-container h1 {
+        font-size: 30px; width: 100%;
+    }
+
+.about-title-container p {
+        max-width: 576px;
+    }
+
+.about-section .about-container .kahim-wahim-container {
+        max-width: 100%;
+    }
+
+.kahim-wahim-container .inner-container {
+        gap: 28px;
+    }
+
+.kahim-container .kahim-card .kahim-overlay h2 {
+        font-size: 14px;
+    }
+
+.kahim-container .kahim-card .kahim-overlay h3 {
+        font-size: 17px;
+        margin-top: 8px;
+    }
+
+.kahim-container .himtika-periode {
+        font-size: 24px;
+    }
+
+.about-section .statistik-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+.about-section .statistik-container .stats-card {
+        width: calc(50% - 10px);
+        max-width: none;
+        padding: 20px 24px;
+    }
+
+.about-section .statistik-container .stats-card .stats-number {
+        font-size: 18px;
+    }
+
+.stats-card .stats-label-container .label-wrapper .label-proker, .stats-card .stats-label-container .label-wrapper .label-pengurus, .stats-card .stats-label-container .label-wrapper-2 .label-event {
+        font-size: 12px;
+    }
+
+.kenali-slider {
+        min-height: 430px;
+        gap: 16px;
+    }
+
+.kenali-slider-navigation {
+        gap: 20px;
+    }
+
+.kenali-slider-button svg {
+        width: 23px;
+        height: 23px;
+    }
+
+.kenali-slider-counter {
+        font-size: 13px;
+    }
+
+.kenali-slider-viewport {
+        min-height: 370px;
+    }
+
+.exploration-grid .kenali-card {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+.kenali-card-title-wrapper h3 {
+        font-size: 1rem;
+    }
+
+.kenali-card-title-wrapper p {
+        font-size: 11px;
+    }
+
+.exploration-grid .card-visi-misi, .exploration-grid .card-logo, .exploration-grid .card-sejarah {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+.logo-title-wrapper h3 {
+        max-width: 80%;
+    }
+
+.logo-title-wrapper p, .sejarah-title-wrapper p {
+        max-width: 80%;
+    }
+
+.event-section .event-header {
+        margin-bottom: 40px;
+    }
+
+.card-event-header .header-left span {
+        font-size: 12px;
+    }
+
+.card-event-1 .card-event-footer p {
+        font-size: 12px;
+    }
+
+.card-event-1 .card-event-footer .btn-seemore {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.hero-section {
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+.hero-section .hero-content .hero-title {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-left {
+        padding: 10px 24px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-left span {
+        font-weight: 500;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-left .btn-icon-top {
+        width: 16px;
+        height: 16px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-right {
+        padding: 10px 24px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-right span {
+        font-weight: 500;
+    }
+
+.hero-section .hero-image-container .overlay-top {
+        padding-top: 16px;
+    }
+
+.hero-section .hero-image-container .overlay-bottom {
+        padding-bottom: 16px;
+    }
+
+.overlay-bottom .image-description-container .image-description-title .image-title {
+        font-size: 18px;
+    }
+
+.overlay-bottom .image-description-container .image-description-subtitle {
+        font-size: 10px;
+    }
+
+.about-section .statistik-container .stats-card {
+        width: calc(50% - 12px);
+        border-radius: 24px;
+    }
+
+.stats-card .stats-label-container .label-wrapper, .stats-card .stats-label-container .label-wrapper-2 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+.stats-card .stats-label-container .label-wrapper-2 .icon-event, .stats-card .stats-label-container .label-wrapper .icon-pengurus {
+        width: 32px;
+        height: 32px;
+    }
+
+.stats-card .stats-label-container .label-wrapper .icon-proker {
+        width: 28px;
+        height: 28px;
+    }
+
+.stats-card .stats-label-container .label-wrapper .label-proker, .stats-card .stats-label-container .label-wrapper .label-pengurus, .stats-card .stats-label-container .label-wrapper-2 .label-event {
+        font-size: 14px;
+    }
+
+.kenali-container .video-footage-bg {
+        background-position: top;
+    }
+
+.kenali-container .exploration-container .title-wrapper h2 {
+        font-size: 1.125rem;
+    }
+
+.kenali-container .exploration-container .title-wrapper h1 {
+        font-size: 1.875rem;
+        max-width: 32rem;
+    }
+
+.kenali-container .exploration-container .exploration-grid {
+        gap: 28px;
+    }
+
+.kenali-slider {
+        min-height: 450px;
+    }
+
+.kenali-slider-track {
+        --kenali-slide-gap: 24px;
+    }
+
+.kenali-slider-viewport {
+        min-height: 390px;
+    }
+
+.kenali-card-title-wrapper h3 {
+        font-size: 1.125rem;
+    }
+
+.kenali-card-title-wrapper p {
+        font-size: 0.75rem;
+    }
+
+.kenali-card-asset.asset-bottom-right {
+        width: 108px;
+    }
+
+.kenali-card-arrow {
+        width: 12px;
+        height: 12px;
+    }
+
+.exploration-grid .card-visi-misi {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+.visi-misi-title-wrapper h3, .logo-title-wrapper h3, .sejarah-title-wrapper h3 {
+        font-size: 1.125rem;
+    }
+
+.visi-misi-title-wrapper p, .logo-title-wrapper p, .sejarah-title-wrapper p {
+        font-size: 0.75rem;
+    }
+
+.card-visi-misi .arrow-icon-top, .card-logo .arrow-icon-top-3, .card-sejarah .arrow-icon-top-4 {
+        width: 12px; height: 12px;
+    }
+
+.event-section .event-header h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+.event-section .event-header h1 {
+        font-size: 30px;
+    }
+
+.card-wrapper {
+        margin-left: 56px;
+        margin-right: 56px;
+        margin-bottom: 36px;
+    }
+
+.card-event-header .header-left span {
+        padding: 4px 11px;
+    }
+
+.card-event-header .header-right .arrow-icon {
+        width: 12px; height: 12px;
+    }
+
+.card-event-1 .card-event-footer h3 {
+        font-size: 16px;
+    }
+
+.kenali-container .video-footage-bg {
+        background-position: top;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+.margin-x-section {
+        padding-right: 44px;
+        padding-left: 44px;
+    }
+
+.mobile-menu .menu-backdrop {
+        display: none;
+    }
+
+.hero-section {
+        padding-top: 188px;
+    }
+
+.hero-section .hero-glow {
+        top: 0;
+        right: 10px;
+        box-shadow: 0 0 300px 250px rgba(31, 127, 120, 0.3);
+    }
+
+.hero-section .hero-glow-2 {
+        bottom: 200px;
+        left: 200px;
+        box-shadow: 0 0 400px 200px rgba(31, 127, 120, 0.3);
+    }
+
+.hero-section .hero-content .hero-title {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+
+.hero-section .hero-desc-wrapper {
+        margin-top: 40px;
+    }
+
+.hero-section .hero-desc-wrapper .hero-desc {
+        font-size: 18px;
+        max-width: 860px;
+    }
+
+.hero-section .hero-cta-wrapper {
+        gap: 32px;
+        margin-top: 30px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-left span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-left .btn-icon-top {
+        width: 19px;
+        height: 19px;
+    }
+
+.hero-section .hero-cta-wrapper .hero-btn-right span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+.hero-section .hero-image-container {
+        margin-top: 80px;
+        border-radius: 32px;
+        filter: drop-shadow(0px 0px 18px rgba(50, 97, 93, 1));
+    -webkit-filter: drop-shadow(0px 0px 18px rgba(50, 97, 93, 1));
+    }
+
+.hero-section .hero-image-container .overlay-top {
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+.hero-section .hero-image-container .overlay-bottom {
+        padding-bottom: 24px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+.overlay-top .hero-logo-container {
+        padding-bottom: 40px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur img {
+        width: 24px;
+        height: 24px;
+    }
+
+.overlay-bottom .image-description-container {
+        gap: 4px;
+        margin-top: 40px;
+    }
+
+.overlay-bottom .image-description-container .image-description-title .image-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+.overlay-bottom .image-description-container .image-description-subtitle {
+        font-size: 14px;
+    }
+
+.hero-section .nilai-kabinet-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        gap: 0;
+        width: 100%;
+    }
+
+.hero-section .nilai-kabinet-container .nilai-kabinet-desktop {
+        gap: 10px;
+    }
+
+.nilai-kabinet-desktop .nilai-sistematis, .nilai-kabinet-desktop .nilai-efisiensi, .nilai-kabinet-desktop .nilai-lestari, .nilai-kabinet-desktop .nilai-aktualisasi {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 6px;
+    }
+
+.nilai-kabinet-desktop .nilai-reformasi, .nilai-kabinet-desktop .nilai-aktif, .nilai-kabinet-desktop .nilai-sinergi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+.nilai-kabinet-desktop .nilai-title-pc {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+.nilai-kabinet-mobile .nilai-title-mobile {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+#hero-section .sparkle {
+        width: 28px;
+        height: 28px;
+    }
+
+.hero-section .nilai-kabinet-container .nilai-kabinet-mobile {
+        gap: 10px;
+        margin-top: 0px;
+        width: auto;
+        display: none;
+    }
+
+.nilai-kabinet-mobile .nilai-reformasi-mobile, .nilai-kabinet-mobile .nilai-aktif-mobile, .nilai-kabinet-mobile .nilai-sinergi-mobile {
+        padding: 16px;
+        min-width: 6px;
+        gap: 6px;
+    }
+
+.about-section .about-glow {
+        right: 80px;
+        top: 200px;
+        box-shadow: 0 0 500px 300px rgba(31, 127, 120, 0.3);
+    }
+
+.about-section .statistik-glow {
+        display: none;
+    }
+
+.about-section .about-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+.about-section .about-container .about-title-container {
+        width: 42.85%;
+    }
+
+.about-title-container h2 {
+        font-size: 20px;
+    }
+
+.about-title-container h1 {
+        font-size: 40px; margin-bottom: 16px;
+    }
+
+.about-title-container p {
+        margin-bottom: 28px;
+    }
+
+.about-title-container .about-button {
+        font-weight: 600; font-size: 16px;
+    }
+
+.about-section .about-container .kahim-wahim-container {
+        width: 57.14%;
+        justify-content: flex-end;
+    }
+
+.kahim-container .kahim-card {
+        border-top-right-radius: 24px;
+        border-top-left-radius: 72px;
+        border-bottom-left-radius: 24px;
+    }
+
+.kahim-container .kahim-card .kahim-overlay {
+        padding-bottom: 24px;
+    }
+
+.kahim-container .kahim-card .kahim-overlay h2 {
+        font-size: 15px;
+    }
+
+.kahim-container .kahim-card .kahim-overlay h3 {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+.kahim-container .himtika-periode {
+        font-size: 20px;
+    }
+
+.about-section .statistik-container {
+        flex-wrap: nowrap;
+        margin-top: 72px;
+    }
+
+.about-section .statistik-container .stats-card {
+        width: 100%;
+    }
+
+.about-section .statistik-container .stats-card .stats-number {
+        font-size: 20px;
+    }
+
+.kenali-section .kenali-glow {
+        top: calc(1 / 2 * 100%);
+        right: 80px;
+        box-shadow: 0 0 500px 300px rgba(31, 127, 120, 0.3);
+    }
+
+.kenali-section .kenali-container {
+        flex-direction: row;
+        gap: 50px;
+        height: 600px;
+    }
+
+.kenali-container .video-card-wrapper {
+        height: 100%;
+        max-width: 42.8%;
+    }
+
+.kenali-container .video-footage-bg {
+        background-position: center;
+    }
+
+.kenali-container .exploration-container {
+        max-width: 57.14%;
+        gap: 30px;
+    }
+
+.kenali-container .exploration-container .title-wrapper h1 {
+        max-width: 100%;
+    }
+
+.kenali-slider {
+        min-height: 0;
+        gap: 14px;
+    }
+
+.kenali-slider-viewport {
+        min-height: 0;
+    }
+
+.kenali-slider-navigation {
+        gap: 22px;
+    }
+
+.kenali-slider-button {
+        width: 35px;
+        height: 35px;
+    }
+
+.kenali-card-title-wrapper h3 {
+        margin-bottom: 12px;
+    }
+
+.kenali-card-arrow {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+
+.kenali-card-asset.asset-bottom-right {
+        width: 116px;
+    }
+
+.kenali-card-title-wrapper h3 {
+        font-size: 1.1rem;
+    }
+
+.visi-misi-title-wrapper h3, .logo-title-wrapper h3, .sejarah-title-wrapper h3 {
+        margin-bottom: 12px;
+    }
+
+.card-visi-misi img {
+        width: 108px;
+    }
+
+.card-visi-misi .arrow-icon-top, .card-logo .arrow-icon-top-3, .card-sejarah .arrow-icon-top-4 {
+        top: 16px;
+        right: 16px;
+        width: 14px;
+        height: 14px;
+    }
+
+.card-logo img, .card-sejarah img {
+        width: 124px;
+    }
+
+.exploration-grid .card-sejarah {
+        padding: 24px;
+    }
+
+.card-sejarah img {
+        bottom: 0;
+        right: 0;
+    }
+
+.event-section .event-glow {
+        top: 50%;
+        left: 80px;
+        box-shadow: 0 0 600px 400px rgba(31, 127, 120, 0.25);
+    }
+
+.event-section {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+.event-section .event-header {
+        margin-bottom: 60px;
+    }
+
+.event-section .event-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+.event-section .event-header h1 {
+        font-size: 40px;
+    }
+
+.card-event-header .header-right .arrow-icon {
+        width: 14px; height: 14px;
+    }
+
+.card-event-1 .card-event-footer h3 {
+        font-size: 20px;
+    }
+
+.card-event-1 .card-event-footer p {
+        font-size: 12px;
+    }
+
+.card-wrapper .card-slide .card-event-1:hover {
+        transform: translateY(-8px);
+    }
+
+.media-hp-footer { margin-left: 0px; }
+}
+
+@media only screen and (min-width: 1280px) {
+.margin-x-section {
+        padding-right: 54px;
+        padding-left: 54px;
+    }
+
+.hero-section .hero-image-container .overlay-top, .hero-section .hero-image-container .overlay-bottom {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur img {
+        width: 32px;
+        height: 32px;
+    }
+
+.overlay-bottom .image-description-container .image-description-title .image-title {
+        font-size: 30px;
+    }
+
+.overlay-bottom .image-description-container .image-description-subtitle {
+        font-size: 18px;
+    }
+
+.nilai-kabinet-desktop .nilai-title-pc {
+        font-size: 20px;
+    }
+
+.about-section {
+        padding-top: 140px;
+    }
+
+.about-section .about-container {
+        gap: 80px;
+    }
+
+.about-section .about-container .about-title-container {
+        width: 100%;
+        gap: 16px;
+    }
+
+.about-title-container h2 {
+        font-size: 24px;
+    }
+
+.about-title-container p {
+        font-size: 16px;
+    }
+
+.about-title-container .about-button {
+        padding: 10px 24px;
+    }
+
+.about-section .about-container .kahim-wahim-container {
+        width: 100%;
+    }
+
+.kahim-container .himtika-periode {
+        font-size: 24px;
+    }
+
+.about-section .statistik-container {
+        justify-content: space-between;
+        gap: 28px;
+    }
+
+.about-section .statistik-container .stats-card {
+        padding: 28px 32px;
+    }
+
+.about-section .statistik-container .stats-card .stats-number {
+        font-size: 28px;
+    }
+
+.about-section .statistik-container .stats-card .stats-label-container {
+        padding-top: 10px;
+    }
+
+.card-event-header .header-right .arrow-icon {
+        width: 16px; height: 16px;
+    }
+
+.card-event-header .header-left span {
+        padding: 5px 15px;
+    }
+
+.card-event-header .header-left img {
+        width: 38px; height: 38px;
+    }
+
+.kenali-section {
+        padding-top: 120px;
+    }
+
+.kenali-section .kenali-container {
+        height: 720px;
+        gap: 70px;
+    }
+
+.kenali-container .video-card-wrapper {
+        max-width: 41.6%;
+    }
+
+.kenali-container .exploration-container {
+        max-width: 58.33%;
+        gap: 40px;
+    }
+
+.kenali-container .exploration-container .title-wrapper {
+        gap: 10px;
+    }
+
+.kenali-container .exploration-container .title-wrapper h2 {
+        font-size: 1.8rem;
+    }
+
+.kenali-container .exploration-container .title-wrapper h1 {
+        font-size: 2.875rem;
+    }
+
+.kenali-container .exploration-container .exploration-grid {
+        gap: 40px;
+    }
+
+.kenali-slider {
+        gap: 18px;
+    }
+
+.kenali-slider-button {
+        width: 40px;
+        height: 40px;
+    }
+
+.kenali-slider-button svg {
+        width: 25px;
+        height: 25px;
+    }
+
+.kenali-slider-counter {
+        min-width: 56px;
+        font-size: 14px;
+    }
+
+.exploration-grid .kenali-card {
+        padding: 1.5rem;
+    }
+
+.kenali-card-title-wrapper h3 {
+        font-size: 1.3rem;
+    }
+
+.kenali-card-title-wrapper p {
+        font-size: 0.875rem;
+    }
+
+.kenali-card-deskripsi-strukorg {
+        max-width: 75%;
+    }
+
+.kenali-card-asset.asset-bottom-right {
+        width: 138px;
+
+    }
+
+.kenali-card-asset.asset-bottom-strukorg {
+        bottom: -15px;
+    }
+
+.kenali-card-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+.exploration-grid .card-visi-misi, .exploration-grid .card-logo {
+        padding: 1.5rem;
+    }
+
+.visi-misi-title-wrapper h3, .logo-title-wrapper h3, .sejarah-title-wrapper h3 {
+        font-size: 1.4rem;
+    }
+
+.visi-misi-title-wrapper p, .logo-title-wrapper p, .sejarah-title-wrapper p {
+        font-size: 0.875rem;
+    }
+
+.card-visi-misi img {
+        width: 120px;
+    }
+
+.card-visi-misi .arrow-icon-top, .card-logo .arrow-icon-top-3, .card-sejarah .arrow-icon-top-4 {
+        width: 16px; height: 16px;
+    }
+
+.card-logo img {
+        width: 148px;
+    }
+
+.card-sejarah img {
+        width: 140px;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+.margin-x-section {
+        padding-right: 140px;
+        padding-left: 140px;
+    }
+
+.section-container {
+        max-width: 1600px;
+        margin-inline: auto;
+    }
+
+.hero-section {
+        padding-top: 200px;
+    }
+
+.hero-section .hero-content .hero-title {
+        font-size: 72px;
+        line-height: 1.25;
+    }
+
+.hero-section .hero-image-container .overlay-top {
+        padding-top: 32px;
+    }
+
+.hero-section .hero-image-container .overlay-bottom {
+        padding-bottom: 32px;
+    }
+
+.overlay-top .hero-logo-container {
+        margin-bottom: 120px;
+    }
+
+.overlay-top .hero-logo-container .logo-bar-blur img {
+        width: 36px;
+        height: 36px;
+    }
+
+.overlay-bottom .image-description-container {
+        margin-top: 120px;
+    }
+
+.overlay-bottom .image-description-container .image-description-title .image-title {
+        font-size: 36px;
+    }
+
+.hero-section .nilai-kabinet-container {
+        margin-top: 32px;
+    }
+
+.nilai-kabinet-desktop .nilai-sistematis, .nilai-kabinet-desktop .nilai-efisiensi, .nilai-kabinet-desktop .nilai-lestari, .nilai-kabinet-desktop .nilai-aktualisasi, .nilai-kabinet-desktop .nilai-reformasi, .nilai-kabinet-desktop .nilai-aktif, .nilai-kabinet-desktop .nilai-sinergi {
+        gap: 8px;
+    }
+
+.nilai-kabinet-desktop .nilai-title-pc, .nilai-kabinet-mobile .nilai-title-mobile {
+        font-size: 24px;
+    }
+
+.nilai-kabinet-mobile .nilai-reformasi-mobile, .nilai-kabinet-mobile .nilai-aktif-mobile, .nilai-kabinet-mobile .nilai-sinergi-mobile {
+        gap: 8px;
+    }
+
+.about-section .about-container .about-title-container {
+        max-width: 672px;
+    }
+
+.about-title-container h2 {
+        font-size: 30px;
+    }
+
+.about-title-container h1 {
+        font-size: 48px;
+    }
+
+.about-title-container p {
+        font-size: 18px;
+    }
+
+.kahim-container .himtika-periode {
+        font-size: 30px;
+    }
+
+.kahim-container .kahim-card {
+        width: 304px;
+        height: 480px;
+    }
+
+.kenali-section .kenali-container {
+        gap: 120px;
+    }
+
+.kenali-container .video-card-wrapper {
+        max-width: 33.3%;
+    }
+
+.kenali-container .exploration-container {
+        max-width: 66,6%;
+    }
+
+.card-sejarah img {
+        width: 160px;
+    }
+
+.card-event-1 .card-event-footer {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+.event-section .event-header h1 {
+        font-size: 48px;
+    }
+
+.card-event-header .header-left span {
+        font-size: 13px;
+    }
+
+.card-event-1 .card-event-footer p {
+        font-size: 14px;
+    }
+}
