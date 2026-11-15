@@ -18,6 +18,6 @@ class StrukturTest extends TestCase
         $response->assertSee('HIMASIF_STRUKTUR_PERIODE', false);
         $response->assertSee('Muhammad Irham', false);
         // Foto di config diubah jadi URL penuh oleh controller (img_asset()).
-        $response->assertSee('hero_team/Kahim.svg', false);
+        $response->assertSee('hero_logo/HIMASIF.webp', false);
     }
 }
