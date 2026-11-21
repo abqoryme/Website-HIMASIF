@@ -9,6 +9,8 @@ export default defineConfig({
                 'resources/js/app.js',
                 // Entry per halaman (CSS-nya ikut lewat import di dalam JS).
                 'resources/js/struktur.js',
+                'resources/js/logo.js',
+                'resources/js/sejarah.js',
             ],
             refresh: true,
         }),

@@ -1,0 +1,271 @@
+/* =========================================================
+   HALAMAN SEJARAH HIMASIF — file khusus Sejarah
+   Dipakai hanya oleh sejarah-himasif/index.html, bersama:
+   - css/tentang-kami.css (gaya dasar: kartu, tombol, glow, marquee)
+   - css/layout-demo.css  (navbar & footer seperti web demo)
+   ========================================================= */
+
+.tk-sj-hero { padding-bottom: 0; }
+.tk-sj-hero .tk-spark { z-index: 1; }
+.tk-sj-tree-wrap {
+    position: relative;
+    max-width: 640px;
+    margin: 40px auto 0;
+}
+.tk-sj-tree-wrap::after { /* tanah / cahaya di bawah pohon */
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -10px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(214, 194, 106, 0.35), transparent 70%);
+    filter: blur(6px);
+}
+.tk-sj-tree { display: block; width: 100%; height: auto; overflow: visible; }
+.tk-sj-trace {
+    fill: none;
+    stroke: url(#tkSjG);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: var(--len, 600);
+    stroke-dashoffset: var(--len, 600);
+}
+.tk-sj-tree.is-drawn .tk-sj-trace {
+    animation: tkSjDraw 1.4s var(--tk-ease) forwards;
+    animation-delay: var(--d, 0s);
+}
+@keyframes tkSjDraw { to { stroke-dashoffset: 0; } }
+.tk-sj-dot {
+    fill: var(--tk-gold);
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0);
+}
+.tk-sj-tree.is-drawn .tk-sj-dot {
+    animation: tkSjPop 0.5s var(--tk-ease-out) forwards, tkSjBlink 2.4s ease-in-out infinite;
+    animation-delay: var(--d, 0s), calc(var(--d, 0s) + 0.6s);
+}
+@keyframes tkSjPop { to { transform: scale(1); } }
+@keyframes tkSjBlink {
+    0%, 100% { transform: scale(1); filter: none; }
+    50% { transform: scale(1.35); filter: drop-shadow(0 0 6px #D6C26A); }
+}
+.tk-sj-chip,
+.tk-sj-pin,
+.tk-sj-chiplogo {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity 0.8s, transform 0.8s var(--tk-ease-out);
+}
+.tk-sj-chip { fill: #041D56; stroke: var(--tk-gold); stroke-width: 2; }
+.tk-sj-pin { fill: var(--tk-gold); }
+.tk-sj-tree.is-drawn .tk-sj-chip,
+.tk-sj-tree.is-drawn .tk-sj-pin,
+.tk-sj-tree.is-drawn .tk-sj-chiplogo { opacity: 1; transform: none; transition-delay: 1.3s; }
+.tk-sj-tree.is-drawn .tk-sj-chip { animation: tkSjChipGlow 3s ease-in-out 2.2s infinite; }
+@keyframes tkSjChipGlow {
+    0%, 100% { filter: drop-shadow(0 0 0 rgba(214, 194, 106, 0)); }
+    50% { filter: drop-shadow(0 0 14px rgba(214, 194, 106, 0.6)); }
+}
+
+/* ---- Perjalanan ---- */
+.tk-sj-intro { display: grid; gap: 16px; align-items: end; }
+.tk-sj-road {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 34px;
+    display: grid;
+    gap: 22px;
+}
+.tk-sj-road__line {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: rgba(214, 194, 106, 0.18);
+}
+.tk-sj-road__line span {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, var(--tk-gold), var(--tk-gold-line));
+    box-shadow: 0 0 10px rgba(214, 194, 106, 0.6);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 2s var(--tk-ease);
+}
+.tk-sj-road.is-visible .tk-sj-road__line span { transform: scaleY(1); }
+.tk-sj-step {
+    position: relative;
+    padding: 18px 18px 18px 20px;
+    border: 1px solid var(--tk-border-soft);
+    border-radius: var(--tk-radius);
+    background: var(--tk-card);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s, transform 0.6s var(--tk-ease-out), border-color 0.4s;
+    transition-delay: calc(var(--i, 0) * 0.25s + 0.2s);
+}
+.tk-sj-road.is-visible .tk-sj-step { opacity: 1; transform: none; }
+.tk-sj-step:hover { border-color: var(--tk-border); }
+.tk-sj-step__dot {
+    position: absolute;
+    left: -31px;
+    top: 22px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--tk-gold);
+    background: var(--tk-bg);
+}
+.tk-sj-step.is-now .tk-sj-step__dot { background: var(--tk-gold); box-shadow: 0 0 0 6px rgba(214, 194, 106, 0.2); }
+.tk-sj-step.is-now .tk-sj-step__dot::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: var(--tk-gold);
+    animation: tkPulse 2s cubic-bezier(0.25, 0, 0, 1) infinite;
+}
+.tk-sj-step.is-now { border-color: var(--tk-border); }
+.tk-sj-step__year {
+    display: inline-block;
+    font-family: var(--tk-font-head);
+    font-size: 26px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--tk-gold);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+.tk-sj-step.is-now .tk-sj-step__year { color: var(--tk-gold); }
+.tk-sj-step h3 { margin: 0 0 6px; font-family: var(--tk-font-head); font-size: 17px; font-weight: 600; color: var(--tk-cream); }
+.tk-sj-step p { margin: 0; font-size: 13px; line-height: 1.65; opacity: 0.85; }
+
+/* ---- Jejak kepengurusan (slider geser) ---- */
+.tk-sj-cab { position: relative; z-index: 2; }
+.tk-sj-cab__track {
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 12px max(20px, calc((100vw - 1200px) / 2 + 20px)) 20px;
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: max(20px, calc((100vw - 1200px) / 2 + 20px));
+    scrollbar-width: none;
+    cursor: grab;
+}
+.tk-sj-cab__track::-webkit-scrollbar { display: none; }
+.tk-sj-cab__track.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+.tk-sj-cab__track:focus-visible { outline: 2px solid var(--tk-gold); outline-offset: -2px; }
+.tk-sj-cab__card {
+    position: relative;
+    flex: 0 0 240px;
+    min-height: 250px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    overflow: hidden;
+    user-select: none;
+}
+.tk-sj-cab__card:hover { transform: translateY(-6px); }
+.tk-sj-cab__period {
+    align-self: flex-start;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    border: 1px solid var(--tk-border-soft);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.tk-sj-cab__icon {
+    margin: auto 0 14px;
+    font-size: 40px;
+    color: rgba(214, 194, 106, 0.35);
+    transition: transform 0.6s var(--tk-ease-out), color 0.4s;
+}
+.tk-sj-cab__card:hover .tk-sj-cab__icon { transform: rotate(-10deg) scale(1.15); color: var(--tk-gold); }
+.tk-sj-cab__card h3 { margin: 0 0 6px; font-family: var(--tk-font-head); font-size: 18px; font-weight: 600; color: var(--tk-cream); }
+.tk-sj-cab__card p { margin: 0; font-size: 12px; opacity: 0.85; }
+.tk-sj-cab__card p b { color: var(--tk-gold); font-weight: 600; }
+.tk-sj-cab__card.is-now {
+    border-color: var(--tk-gold);
+    background:
+        radial-gradient(circle at 100% 0%, rgba(214, 194, 106, 0.22), transparent 60%),
+        var(--tk-card);
+}
+.tk-sj-cab__card.is-now .tk-sj-cab__period { background: var(--tk-gold); color: #000; border-color: var(--tk-gold); font-weight: 700; }
+.tk-sj-cab__card.is-now .tk-sj-cab__icon { color: var(--tk-gold); }
+.tk-sj-cab__link { margin-top: 12px; color: var(--tk-gold); font-size: 12px; font-weight: 600; text-decoration: none; }
+.tk-sj-cab__link i { margin-left: 4px; transition: transform 0.3s; }
+.tk-sj-cab__link:hover i { transform: translateX(4px); }
+.tk-sj-cab__ctrl { display: flex; align-items: center; gap: 20px; margin-top: 8px; }
+.tk-sj-cab__bar { flex: 1; height: 3px; border-radius: 3px; background: rgba(214, 194, 106, 0.18); overflow: hidden; }
+.tk-sj-cab__bar span { display: block; height: 100%; width: 20%; border-radius: 3px; background: var(--tk-gold); transition: transform 0.2s linear; transform-origin: left; }
+.tk-sj-cab__btns { display: flex; gap: 10px; }
+
+/* ---- Nilai ---- */
+.tk-sj-values { display: grid; gap: 16px; }
+.tk-sj-value { position: relative; padding: 24px 22px; overflow: hidden; }
+.tk-sj-value__num {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-family: var(--tk-font-head);
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(214, 194, 106, 0.4);
+    transition: color 0.4s, -webkit-text-stroke-color 0.4s, transform 0.5s var(--tk-ease-out);
+}
+.tk-sj-value:hover .tk-sj-value__num { color: rgba(214, 194, 106, 0.15); -webkit-text-stroke-color: var(--tk-gold); transform: translateY(-4px); }
+.tk-sj-value h3 { position: relative; margin: 26px 0 8px; font-family: var(--tk-font-head); font-size: 19px; font-weight: 600; color: var(--tk-gold); }
+.tk-sj-value p { position: relative; margin: 0; font-size: 13px; line-height: 1.7; opacity: 0.88; }
+.tk-sj-value--main {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-color: var(--tk-border);
+    background:
+        radial-gradient(circle at 0% 50%, rgba(214, 194, 106, 0.18), transparent 55%),
+        var(--tk-card);
+}
+.tk-sj-value--main .tk-sj-value__num { position: static; font-size: 64px; color: var(--tk-gold); -webkit-text-stroke: 0; flex-shrink: 0; }
+.tk-sj-value--main h3 { margin-top: 0; color: var(--tk-cream); font-size: 22px; }
+
+@media (min-width: 768px) {
+    .tk-sj-intro { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .tk-sj-values { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .tk-sj-value--main { grid-column: 1 / -1; padding: 32px 36px; }
+    .tk-sj-cab__card { flex-basis: 270px; }
+}
+@media (min-width: 992px) {
+    /* Perjalanan jadi horizontal */
+    .tk-sj-road {
+        padding: 40px 0 0;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 16px;
+    }
+    .tk-sj-road__line { left: 0; right: 0; top: 7px; bottom: auto; width: auto; height: 2px; }
+    .tk-sj-road__line span {
+        background: linear-gradient(to right, var(--tk-gold), var(--tk-gold-line));
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    .tk-sj-road.is-visible .tk-sj-road__line span { transform: scaleX(1); }
+    .tk-sj-step__dot { left: 20px; top: -41px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .tk-sj-trace { stroke-dashoffset: 0; }
+    .tk-sj-dot, .tk-sj-chip, .tk-sj-pin, .tk-sj-chiplogo { opacity: 1; transform: none; }
+    .tk-sj-step { opacity: 1; transform: none; }
+}

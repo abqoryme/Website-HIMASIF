@@ -20,3 +20,5 @@ Fork repository ini lalu git clone ke laptop mu dan git push kalau sudah selesai
 Baru dua pages yang udah
 - Home
 - Struktur
+- Logo
+- Sejarah
